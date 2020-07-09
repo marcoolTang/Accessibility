@@ -1,25 +1,25 @@
 
 # Rule 规则  
 
-+ [ARIA: row role](#aria:-row-role)
++ [ARIA: Row Role](#row-role)
 
-+ [ARIA: rowgroup role](#aria:-rowgroup-role)
++ [ARIA: Rowgroup Role](#rowgroup-role)
 
-+ [ARIA: search role](#aria:-search-role)
++ [ARIA: Search Role](#search-role)
 
-+ [ARIA: switch role](#aria:-switch-role)
++ [ARIA: Switch Role](#switch-role)
 
-+ [ARIA: table role](#aria:-table-role)
++ [ARIA: Table Role](#table-role)
 
-+ [ARIA: tabpanel role](#aria:-tabpanel-role)
++ [ARIA: Tabpanel Role](#tabpanel-role)
 
-+ [ARIA: textbox role](#aria:-textbox-role)
++ [ARIA: Textbox Role](#textbox-role)
 
-+ [ARIA: timer role](#aria:-timer-role)
++ [ARIA: Timer Role](#timer-role)
 
 ****
 
-## ARIA: row role
+## Row Role
 
 具有`role='row'`的元素是表格结构中的一行单元格。一行包含一个或多个单元格、网格单元格或列标题，还可能包含一个行标题，位于网格、表或树表中，也可以在行组中包含。出自[ARIA]
 
@@ -126,7 +126,7 @@
 
 ****
 
-## ARIA: rowgroup role  
+## Rowgroup Role  
 
 具有`role="rowgroup"`的元素是表格结构中的一组行。行组包含一行或多行单元格、网格单元格、列标题或网格、表或树表中的行标题。  
 
