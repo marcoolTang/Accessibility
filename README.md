@@ -1,9 +1,29 @@
 
 # Rule 规则  
 
++ [ARIA: row role](#aria:-row-role)
+
++ [ARIA: rowgroup role](#aria:-rowgroup-role)
+
++ [ARIA: search role](#aria:-search-role)
+
++ [ARIA: switch role](#aria:-switch-role)
+
++ [ARIA: table role](#aria:-table-role)
+
++ [ARIA: tabpanel role](#aria:-tabpanel-role)
+
++ [ARIA: textbox role](#aria:-textbox-role)
+
++ [ARIA: timer role](#aria:-timer-role)
+
+****
+
+## ARIA: row role
+
 具有`role='row'`的元素是表格结构中的一行单元格。一行包含一个或多个单元格、网格单元格或列标题，还可能包含一个行标题，位于网格、表或树表中，也可以在行组中包含。出自[ARIA]
 
-## 代码块  
+### **代码块**  
 
 ``` HTML  
 
@@ -28,7 +48,7 @@
 </div>
 ```
 
-### 上下文角色
+### **上下文角色**
 
 `role="rowgroup"`
 
@@ -46,7 +66,7 @@
 
 + 类似于网格，但其行可以以与树相同的方式展开和折叠。
 
-## 后代角色
+### **后代角色**
 
 `role="cell"`
 
@@ -64,7 +84,7 @@
 
 + 与具有行范围的HTML`<th>`元素的结构等效的标题单元格。与普通单元格不同，rowheader角色在它与相应行中的所有单元格之间建立关系。
 
-## 状态和属性
+### 状态和属性
 
 `aria-expanded` 扩展状态
 
@@ -103,5 +123,31 @@
 + 只有在对DOM隐藏行时，才需要`aria-rowindex`属性，以指示正在读取总行列表中的哪一行。该属性在每一行上都有一个唯一的值，它的值是一个介于1和表、网格或treegrid中的总行数之间的整数，表示每行的位置或索引。例如，如果一个表有1500行，但在DOM中只有标题和第47行和第52行，则在标题行上设置`aria-rowindex="1"`，在第47行和第52行分别设置`aria- rowindex="47"`和`aria-rowindex="52"`。
 
 + 如果所有行都存在于DOM中，则不需要该属性。
+
+****
+
+## ARIA: rowgroup role  
+
+具有`role="rowgroup"`的元素是表格结构中的一组行。行组包含一行或多行单元格、网格单元格、列标题或网格、表或树表中的行标题。  
+
+### 上下文角色
+
+`role="table"`
+
++ 三种可能的上下文之一（以及grid和treegrid），您可以在其中找到一行。将表中的`<row>`元素标识为非交互式结构的`<row>`部分。
+
+`role="grid"`
+
++ 三种可能的上下文之一（以及table和treegrid），您可以在其中找到一行。将表中的`<row>`元素标识为非交互式结构的`<row>`部分。
+
+`role="treegrid"`
+
++ 类似于网格，但其行可以以与树相同的方式展开和折叠。
+
+### 后代角色
+
+`role="row"`
+
++ 表格结构中的一行单元格。行包含一个或多个单元格、gridcell或列标题，有时还包含行标题。
 
 [ARIA]:  https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Row_Role
