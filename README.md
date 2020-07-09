@@ -316,7 +316,16 @@ ARIA role属性的`table`值将包含角色的元素标识为具有非交互式�
 `aria-required` 必需属性
 
 指示在提交字段之前必须为其提供值。不要使用`aria-required`，而是使用语义`<input type="text">`或带有必需属性的`<textarea>`。
+
 ## ARIA: timer role
+
+`timer`角色向assistive technologies指示元素是一个数字计数器，列出从起始点到结束点所用的时间或剩余时间。
+
+```HTML
+<div role="timer" id="eggtimer">0</div>
+```
+它将这个div元素定义为没有剩余时间的计时器。
+****
 
 [ARIA]:  https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Row_Role  
 [landmark]:  https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#Landmark_roles
