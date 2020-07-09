@@ -5,17 +5,17 @@
 
 + [ARIA: Rowgroup Role](#aria-rowgroup-roletop)
 
-+ [ARIA: Search Role](#aria-search-role)
++ [ARIA: Search Role](#aria-search-roletop)
 
-+ [ARIA: Switch Role](#aria-switch-role)
++ [ARIA: Switch Role](#aria-switch-roletop)
 
-+ [ARIA: Table Role](#aria-table-role)
++ [ARIA: Table Role](#aria-table-roletop)
 
-+ [ARIA: Tabpanel Role](#aria-tabpanel-role)
++ [ARIA: Tabpanel Role](#aria-tabpanel-roletop)
 
-+ [ARIA: Textbox Role](#aria-textbox-role)
++ [ARIA: Textbox Role](#aria-textbox-roletop)
 
-+ [ARIA: Timer Role](#aria-timer-role)
++ [ARIA: Timer Role](#aria-timer-roletop)
 
 ****
 
@@ -164,7 +164,7 @@ search [landmark]角色用于标识用于搜索页面、站点或站点集合的
 
 屏幕阅读器会宣布这个地标的角色类型。因此，您不需要在其标签中描述地标是什么。例如，带有aria-label="Sitewide search"的`role="search"`声明可以冗余地声明为"Sitewide search search"。
 
-## ARIA: switch role
+## ARIA: switch role<sup>[Top](#rule-规则)</sup>
 
 ARIA `switch`角色在功能上与checkbox角色完全相同，只是`switch`角色不表示"checked"和"unchecked"状态，这两个状态在意义上相当通用，而是表示"on"和"off"状态
 
@@ -185,7 +185,7 @@ ARIA `switch`角色与checkbox角色相同，除了不是"checked"或"unchecked"
 
 由于`swich`是一个交互式控件，它必须是可调焦的，并且可以使用键盘。如果角色应用于不可聚焦的元素，请使用tabindex属性来更改它。切换开关值所需的键盘快捷键是<kbd>space</kbd>空格键。切换开关时，开发人员需要动态更改`aria-checked`属性的值。
 
-## ARIA: tab role
+## ARIA: tab role<sup>[Top](#rule-规则)</sup>
 
 ARIA `tab`角色表示tablist中的一个交互元素，激活该元素后，将显示其关联的tabpanel。
 
@@ -201,7 +201,7 @@ ARIA `tab`角色表示tablist中的一个交互元素，激活该元素后，将
 
 当处理具有`tab`角色的元素时，当它们被选中或处于活动状态时，它们的`aria-selecte`d属性应该设置为`true`，否则应该设置为`false`。当一个选项卡被选中或处于活动状态时，其受控的`tabpanel`应将其aria展开并将隐藏属性设置为`true`，否则应将其设置为`false`。
 
-## ARIA: table role
+## ARIA: table role<sup>[Top](#rule-规则)</sup>
 
 ARIA role属性的`table`值将包含角色的元素标识为具有非交互式表结构，该结构包含按行和列排列的数据，类似于原生的<table>HTML元素。
 
@@ -249,11 +249,11 @@ ARIA role属性的`table`值将包含角色的元素标识为具有非交互式�
 
 要创建具有表格结构的交互式小部件，请改用网格模式。如果交互提供了单个单元的选择状态，如果提供了从左到右和从上到下的导航，或者如果用户界面允许重新排列单元顺序或通过拖放等方式更改单个单元的顺序，请改用grid或treegrid。
 
-## ARIA: tabpanel role
+## ARIA: tabpanel role<sup>[Top](#rule-规则)</sup>
 
 待官方文档补充
 
-## ARIA: textbox role
+## ARIA: textbox role<sup>[Top](#rule-规则)</sup>
 
 `textbox`角色用于标识允许输入自由格式文本的元素。只要可能，不要使用此角色，对于单行输入使用带有type="text"的·元素，或者对于多行输入使用·元素。
 
@@ -317,7 +317,7 @@ ARIA role属性的`table`值将包含角色的元素标识为具有非交互式�
 
 指示在提交字段之前必须为其提供值。不要使用`aria-required`，而是使用语义`<input type="text">`或带有必需属性的`<textarea>`。
 
-## ARIA: timer role
+## ARIA: timer role<sup>[Top](#rule-规则)</sup>
 
 `timer`角色向assistive technologies指示元素是一个数字计数器，列出从起始点到结束点所用的时间或剩余时间。
 
